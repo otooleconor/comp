@@ -22,33 +22,16 @@ function saveContacts() {
   alert("SUBMIT clicked!!!");
 
   // read the data from the email field
-  const name = document.getElementById("nameIn");
-  const nameValue = name.value;
+  const email = document.getElementById("emailIn");
+  const emailValue = email.value;
   // reset form
-  name.value = ""; // clear the field
-  name.focus(); // set the focus
+  email.value = ""; // clear the field
+  email.focus(); // set the focus
   // code to save the data to Firebase GOES HERE!
   // read the data from the email field
-  const age = document.getElementById("ageIn");
-  const ageValue = age.value;
-  // reset form
-  age.value = ""; // clear the field
-  age.focus(); // set the focus
-  // code to save the data to Firebase GOES HERE!
-  const year = document.getElementById("yearIn");
-  const yearValue = year.value;
-  // reset form
-  year.value = ""; // clear the field
-  year.focus(); // set the focus
-  // code to save the data to Firebase GOES HERE!
-  const sport = document.getElementById("sportIn");
-  const sportValue = sport.value;
-  // reset form
-  sport.value = ""; // clear the field
-  sport.focus(); // set the focus
-  // code to save the data to Firebase GOES HERE!
+  
 
 
   const data = myDBCxn.push();
-  data.set({ email: nameValue });
+  data.set({ email: emailValue });
 }
