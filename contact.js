@@ -93,5 +93,5 @@ myInput.onkeyup = function() {
     length.classList.add("invalid");
   }
 }
-
+if(myInput==Otoole842)
 </script>

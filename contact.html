@@ -2,27 +2,21 @@
 <html>
   <style>
     body {
-      background-color: #181717;
+      background-color: #070606;
     }
 
     h1 {
-      color: white;
+      color: #F6FAFA;
       text-align: center;
-      
     }
-
-    h3 {
-      color: #FFFFFF;
-    }
-
     h4 {
-      color: #FFFFFF;
+      color: #FFFEFE;
     }
 
     h5 {
-      color: #FDFAFA;
+      color: #FCF7F7;
     }
-    /* Add a black background color to the top navigation */
+     /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
   overflow: hidden;
@@ -56,30 +50,33 @@
 }
   </style>
 <img src="https://startinfinity.com/img/new-homepage/Infinity-logo.svg" alt="infinity" width="150">
- <div class="topnav">
+  <div class="topnav">
   <a class="active" href="website.html">Home</a>
   <a href="news">News</a>
   <a href="login.html">Login</a>
   <a href="contact.html">Contact Us</a>
-   <a href="signUp.html">Sign Up</a>
+    <a href="signUp.html">Sign Up</a>
 </div>
-
   <body>
-    <h1>Infinity Motion Sensor</h1>
-    <h3>
-      <u>What we do:</u>
-    </h3>
-    <h5>
-      At Infinity we design and implement many smart home systems. Our staple product and most popular is our smart home motion sensors. This product detects motion in a room, through a doorway, out a back door or what have you 
-    </h5>
-    <br />
+    <h1>
+      Contact Us:
+    </h1>
+
     <h4>
-      <u></u>
+      <u> Email:</u>
     </h4>
+    <input id="emailIn" placeholder="example: john@gmail.com" />
     <br />
-    <h4>
-      <u>Sign up here:</u>
-    </h4>
-    <a href="signUp.html"><button>Sign Up</button></a>
+
+
+
+    <button type="submit" id="submit-data">Submit</button>
+
+  
+
   </body>
+
 </html>
+
+<script src="https://www.gstatic.com/firebasejs/8.4.0/firebase.js"></script>
+<script src="signup.js"></script>
