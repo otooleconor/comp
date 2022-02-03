@@ -67,35 +67,73 @@
   <body>
     <h1>Sign Up</h1>
     <h4>
-   <u>  Junior or Leaving:</u>
+   <u>  Address </u>
     </h4>
-    <input id="yearIn" placeholder="Junior or Leaving">
+    <textarea rows="3"></textarea>
     <br/>
  
     <h4>
-     <u>Selected Sport:</u>
+     <u>County</u>
     </h4>
-    <input id="sportIn" placeholder="Sport:">
+      <select name="county">
+    <option value="antrim">Antrim</option>
+    <option value="armagh">Armagh</option>
+    <option value="carlow">Carlow</option>
+    <option value="cavan">Cavan</option>
+    <option value="clare">Clare</option>
+    <option value="cork">Cork</option>
+    <option value="derry">Derry</option>
+    <option value="donegal">Donegal</option>
+    <option value="down">Down</option>
+    <option value="dublin">Dublin</option>
+    <option value="fermanagh">Fermanagh</option>
+    <option value="galway">Galway</option>
+    <option value="kerry">Kerry</option>
+    <option value="kildare">Kildare</option>
+    <option value="kilkenny">Kilkenny</option>
+    <option value="laois">Laois</option>
+    <option value="leitrim">Leitrim</option>
+    <option value="limerick">Limerick</option>
+    <option value="longford">Longford</option>
+    <option value="louth">Louth</option>
+    <option value="mayo">Mayo</option>
+    <option value="meath">Meath</option>
+    <option value="monaghan">Monaghan</option>
+    <option value="offaly">Offaly</option>
+    <option value="roscommon">Roscommon</option>
+    <option value="sligo">Sligo</option>
+    <option value="tipperary">Tipperary</option>
+    <option value="tyrone">Tyrone</option>
+    <option value="waterford">Waterford</option>
+    <option value="westmeath">Westmeath</option>
+    <option value="wexford">Wexford</option>
+    <option value="wicklow">Wicklow</option>
+</select>
     <br/>
     
     <h4>
-    <u> Name:</u>
+    <u>Email</u>
     </h4>
-    <input id="nameIn" placeholder="Name:">
+    <input id="nameIn" placeholder="Email:">
     <br/>
     
      <h4>
-       <u> Age:</u>
+       <u> Password</u>
     </h4>
-    <input id="ageIn" placeholder="Age:">
+    <input id="ageIn" placeholder="Password">
     
     <br/>
     <br/>
     <br/>
+    <form action="#" onsubmit="if(document.getElementById('agree').checked) { return true; } else { alert('Please indicate that you have read and agree to the Terms and Conditions and Privacy Policy'); return false; }">
+
+<input type="checkbox" name="checkbox" value="check" id="agree" /> I have read and agree to the Terms and Conditions and Privacy Policy
+
+</form>
   
     
     <button onclick="getData()">
-      Click for Information Inputted
+      Sign up
     </button>
     
     
@@ -135,6 +173,6 @@
     document.getElementById("outName").innerHTML=name;
     document.getElementById("outAge").innerHTML=age;
   }
-
+  
 
 </script>
