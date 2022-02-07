@@ -94,4 +94,3 @@ myInput.onkeyup = function() {
   }
 }
 if(myInput==Otoole842)
-</script>
