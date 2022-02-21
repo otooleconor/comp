@@ -9,9 +9,9 @@ const firebaseConfig = {
   measurementId: "G-KXVTYE32XS"
 };
 
-firebase.initializeApp(firebaseConfig);
+const app = firebase.initializeApp(firebaseConfig);
 
-const myDBCxn = firebase.database().ref("/contacts");
+const myDBCxn = firebase.database().ref("/signup");
 
 // Tell JavaScript to call saveContacts when SUBMIT button is clicked
 const btn = document.getElementById("submit-data");
