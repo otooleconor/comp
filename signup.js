@@ -9,7 +9,7 @@ const firebaseConfig = {
   measurementId: "G-KXVTYE32XS"
 };
 
-const app = firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 
 const myDBCxn = firebase.database().ref("/contacts");
 
@@ -23,17 +23,20 @@ function saveContacts() {
   
    const name = document.getElementById("nameIn");
   const nameValue = name.value;
+  
   name.value = ""; 
   name.focus(); 
-  const data = myDBCxn.push();
-  data.set({ email: nameValue });
+  
   
    const age = document.getElementById("ageIn");
   const ageValue = age.value;
-  email.value = ""; 
-  email.focus(); 
+  
+  age.value = ""; 
+  age.focus(); 
+  
+  
   const data = myDBCxn.push();
-  data.set({ password: ageValue });
+  data.set({ email: name.Value, password: age.Value});
   
   
 }
