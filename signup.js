@@ -20,35 +20,20 @@ btn.addEventListener("click", saveContacts);
 // Submit clicked so post the data to the server
 function saveContacts() {
   alert("SUBMIT clicked!!!");
-
   
-  const email = document.getElementById("yearIn");
-  const emailValue = email.value;
-  email.value = ""; 
-  email.focus(); 
-  const data = myDBCxn.push();
-  data.set({ email: emailValue });
-  
-   const email = document.getElementById("sportIn");
-  const emailValue = email.value;
-  email.value = ""; 
-  email.focus(); 
-  const data = myDBCxn.push();
-  data.set({ email: emailValue });
-  
-   const email = document.getElementById("nameIn");
-  const emailValue = email.value;
+   const name = document.getElementById("nameIn");
+  const nameValue = name.value;
   name.value = ""; 
   name.focus(); 
   const data = myDBCxn.push();
-  data.set({ name: nameValue });
+  data.set({ email: nameValue });
   
    const age = document.getElementById("ageIn");
   const ageValue = age.value;
   email.value = ""; 
   email.focus(); 
   const data = myDBCxn.push();
-  data.set({ age: ageValue });
+  data.set({ password: ageValue });
   
   
 }

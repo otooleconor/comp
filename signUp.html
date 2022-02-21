@@ -132,33 +132,11 @@
 </form>
   <br />
     
-    <button onclick="getData()">
-      Sign up
-    </button>
+   <button type="submit" id="submit-data">Sign up</button>
     
     
   </body>
 </html>
-
-
-
-<script>
-  function getData(){
-    var year=document.getElementById
-    ("yearIn").value;
-     var sport=document.getElementById
-    ("sportIn").value;
-     var name=document.getElementById
-    ("nameIn").value;
-     var age=document.getElementById
-    ("ageIn").value;
-    
-    document.getElementById("outYear").innerHTML=year;
-    document.getElementById("outSport").innerHTML=sport;
-    document.getElementById("outName").innerHTML=name;
-    document.getElementById("outAge").innerHTML=age;
-  }
-</script>
   
 <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase.js"></script>
 <script src="signup.js">
