@@ -95,12 +95,7 @@
       margin-bottom: 16px;
     }
 
-    /* Style the submit button */
-    input[type=submit] {
-      background-color: #950CEF;
-      color: rgb(13,11,11);
-    }
-
+  
     /* Style the container for inputs */
     .container {
       background-color: #f1f1f1;
@@ -167,11 +162,10 @@
   <br />
   <body>
     <div class="container">
-      <form action="/action_page.php">
-        <label for="usrname">Username</label>
+        <label>Username</label>
         <input type="text" id="usrname" name="usrname" required />
 
-        <label for="psw">Password</label>
+        <label>Password</label>
         <input
           type="password"
           id="psw"
@@ -181,8 +175,7 @@
           required
         />
 
-        <a href="website.html"><button>Submit</button></a>
-      </form>
+        <a href="profile.html"><button>Submit</button></a>
     </div>
 
     <div id="message">
@@ -253,11 +246,11 @@
     }
   };
   function getData() {
-    var passw = /Pass1234/;
+    var passw = "Password1234";
 
     var userN = "JaneDoe";
 
-    if (myInput.value.match(passw) && userName.value.match(userN)) {
+    if (psw.value.match(passw) && usrname.value.match(userN)) {
       // worked with "" also worked with == "JaneDoe"
 
       alert("You have successfully logged in");
