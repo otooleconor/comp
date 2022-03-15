@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <style>
+ <style>
     body {
       background-color: white;
+      
     }
 
     h1 {
       color: black;
       text-align: center;
+      font-family: arial;
       
     }
 
@@ -54,6 +56,93 @@
   background-repeat: no-repeat;
   background-size:cover;
 }
+    }
+        /* Add a black background color to the top navigation */
+    .topnav {
+      background-color: black;
+      overflow: hidden;
+    }
+
+    /* Style the links inside the navigation bar */
+    .topnav a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    /* Change the color of links on hover */
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* Add a color to the active/current link */
+    .topnav a.active {
+      background-color: black;
+      color: white;
+    }
+        input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+    }
+
+    /* Style the submit button */
+    input[type=submit] {
+      background-color: #950CEF;
+      color: rgb(13,11,11);
+    }
+
+    /* Style the container for inputs */
+    .container {
+      background-color: #f1f1f1;
+      padding: 20px;
+    }
+
+    /* The message box is shown when the user clicks on the password field */
+    #message {
+      display:none;
+      background: #f1f1f1;
+      color: #000;
+      position: relative;
+      padding: 20px;
+      margin-top: 10px;
+    }
+
+    #message p {
+      padding: 10px 35px;
+      font-size: 18px;
+    }
+
+    /* Add a green text color and a checkmark when the requirements are right */
+    .valid {
+      color: rgb(92,240,20);
+    }
+
+    .valid:before {
+      position: relative;
+      left: -35px;
+       content: #10004;";
+
+    }
+
+    /* Add a red text color and an "x" icon when the requirements are wrong */
+    .invalid {
+      color: red;
+    }
+
+    .invalid:before {
+      position: relative;
+      left: -35px;
+
+    }
   </style>
 <img src="https://startinfinity.com/img/new-homepage/Infinity-logo.svg" alt="infinity" width="150">
  <div class="topnav">
@@ -64,6 +153,8 @@
   <a href="signUp.html">Sign Up</a> 
 </div>
 <body>
+<br />
+<br /> 
     <h1>Products</h1>
     <h3>
       <u>New Updates 07/02/2022</u>
