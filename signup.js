@@ -11,7 +11,7 @@ const firebaseConfig = {
 
 const app = firebase.initializeApp(firebaseConfig);
 
-const myDBCxn = firebase.database().ref("/signup");
+const myDBCxn = firebase.database().ref("/signUp");
 
 // Tell JavaScript to call saveContacts when SUBMIT button is clicked
 const btn = document.getElementById("submit-data");
