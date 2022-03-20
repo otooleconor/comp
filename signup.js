@@ -29,6 +29,13 @@ function saveContacts() {
   email.focus(); // set the focus
   // code to save the data to Firebase GOES HERE!
   // read the data from the email field
+  const password  = document.getElementById("passwordIn");
+  const passwordValue = password.value;
+  // reset form
+  password.value = ""; // clear the field
+  password.focus(); // set the focus
+  // code to save the data to Firebase GOES HERE!
+  // read the data from the email field
   const address  = document.getElementById("addressIn");
   const addressValue = address.value;
   // reset form
@@ -36,11 +43,18 @@ function saveContacts() {
   address.focus(); // set the focus
   // code to save the data to Firebase GOES HERE!
   // read the data from the email field
+  const county = document.getElementById("countyIn");
+  const countyValue = county.value;
+  // reset form
+  county.value = ""; // clear the field
+  county.focus(); // set the focus
+  // code to save the data to Firebase GOES HERE!
+  // read the data from the email field
   
 
 
   const data = myDBCxn.push();
-  data.set({ email: emailValue });
+  data.set({ email: emailValue, password: passwordValue, address: addressValue, county: countyValue});
 }
 
 
