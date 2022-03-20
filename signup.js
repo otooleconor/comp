@@ -20,25 +20,28 @@ btn.addEventListener("click", saveContacts);
 // Submit clicked so post the data to the server
 function saveContacts() {
   alert("SUBMIT clicked!!!");
+
+  // read the data from the email field
+  const email = document.getElementById("emailIn");
+  const emailValue = email.value;
+  // reset form
+  email.value = ""; // clear the field
+  email.focus(); // set the focus
+  // code to save the data to Firebase GOES HERE!
+  // read the data from the email field
+  const address  = document.getElementById("addressIn");
+  const addressValue = address.value;
+  // reset form
+  address.value = ""; // clear the field
+  address.focus(); // set the focus
+  // code to save the data to Firebase GOES HERE!
+  // read the data from the email field
   
-   const name = document.getElementById("nameIn");
-  const nameValue = name.value;
-  
-  name.value = ""; 
-  name.focus(); 
-  
-  
-   const age = document.getElementById("ageIn");
-  const ageValue = age.value;
-  
-  age.value = ""; 
-  age.focus(); 
-  
-  
+
+
   const data = myDBCxn.push();
-  data.set({ email: name.Value, password: age.Value});
-  
-  
+  data.set({ email: emailValue });
 }
+
 
 
